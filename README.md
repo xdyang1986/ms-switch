@@ -9,3 +9,6 @@ Support On/Off, support disable in switch component.
 
 npm install  
 npm start
+
+
+Code is for react learning.
