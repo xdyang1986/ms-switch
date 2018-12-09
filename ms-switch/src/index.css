@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.ms-switch {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 44px;
+  height: 22px;
+  line-height: 20px;
+  padding: 0;
+  vertical-align: middle;
+  border-radius: 20px 20px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+.ms-switch:after {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 1px;
+  border-radius: 50% 50%;
+  background-color: #fff;
+  content: " ";
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  transform: scale(1);
+  transition: left .3s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+.ms-switch:hover:after {
+  transform: scale(1.1);
+}
+
+.ms-switch-inner {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 22px;
+  top: 0;
+}
+
+.ms-switch-checked {
+  border: 1px solid #87d068;
+  background-color: #87d068;
+}
+
+.ms-switch-checked >
+.ms-switch-inner {
+  left: 4px;
+}
+
+.ms-switch-checked:after {
+  left: 22px;
+}
+
+.ms-switch-disabled {
+  cursor: no-drop;
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.ms-switch-disabled:after {
+  background: #9e9e9e;
+  animation-name: none;
+  cursor: no-drop;
+}
+
+.ms-switch:after {
+  transform: scale(1);
+  animation-name: none;
+}
