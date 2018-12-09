@@ -7,5 +7,5 @@ switch component:
 Support On/Off, support disable in switch component.
 
 
-npm insall  
+npm install  
 npm start
